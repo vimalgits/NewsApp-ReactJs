@@ -14,7 +14,7 @@ export default class Home extends Component {
 
   async getApiData() {
     let response = await fetch(
-      `https://newsapi.org/v2/everything?q=${
+      `https://gnews.io/api/v4/everything?q=${
         this.props.search ? this.props.search : this.props.q
       }&pageSize=24&page=1&sortBy=publishedAt&language=${
         this.props.language
